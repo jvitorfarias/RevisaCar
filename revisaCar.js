@@ -1,10 +1,12 @@
-function addTextNode(text) {
-    let newText = document.createTextNode(text)
-    let rc = document.getElementById("rc")
-
-    rc.appendChild(newText)
-}
-
-function reloadPage() {
-    window.location.reload()
-}
+Fancybox.bind('[data-fancybox]', {
+    // Custom options for all galleries
+});  
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Custom options for the first gallery
+});    
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Custom options for the second gallery
+  Carousel : {
+    infinite: true
+  }
+});

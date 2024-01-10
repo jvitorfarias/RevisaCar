@@ -3,20 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="revisaCar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <title>RevisaCar</title>
 </head>
 <body>
-    <div id="logo">
-        <h1 id="a ppName">RevisaCar</h1>
-        <h3 id="appCaption">Revisão? Deixa que a gente monitora por você!</h3>
-        <button type="button" onclick="reloadPage()">Atualizar Página</button>
+<header>
+    <div id="cabecalho">
+        <a class="nav-brand" href="#">RevisaCar</a>
+        <div>
+            <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Curiosidades</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contatos</a>
+            </li>
+        </ul>
     </div>
-    <div>
-        <p>Conte-nos mais sobre o seu carro?</p>
-        <input type="number" required>
-        
-    </div>
-    <script src="revisaCar.js"></script>
+    <form class="form">
+        <h2 id="titleForm">Registre aqui sua visita</h2>
+        <label class="lb" for="nome">Nome completo</label>
+        <input name="nome" id="nome" type="text" class="infos" placeholder="Nome completo">
+    
+        <label for="email" class="lb">E-mail</label>
+        <input name="email" id="email" type="email" class="infos" placeholder="E-mail">
+    
+        <label for="data" class="lb">Data</label>
+        <input name="data" id="data" type="date" class="infos" required>
+      <div id="btn">
+          <button id="send" type="submit">Send</button>
+          <button id="limpar" type="reset">Clear </button>
+      </div>
+    </form>
+</header>
+<main id="conteudo">
+    <section class="banner">
+        <div class="textBox">
+            <h2 class="cars"><strong>Toyota Supra V12: Smokey Nagata(TopSecret)</strong></h2>
+            <div class="card">    
+                <p class="text">
+                Se você tem idade o bastante para ter acompanhado a cena tuning da década passada – a época do carros coloridos, com body kits exagerados, luzes de neon e Velozes e Furiosos como referência, provavelmente conhece a história de Smokey Nagata, o cara que foi preso no Reino Unido por passar dos 300 km/h em vias públicas e acabou banido de entrar na terra da Rainha Elizabeth II por conta disso.
+                </p>
+                <a class="photoBox" href="Imagens/Supra TopSecret/smokeynagat.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens/Supra TopSecret/smokeynagat.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Isto aconteceu em 1998, quando a dissolução do Mid Night Club, mais famosa gangue de pilotos de rua do Japão, ainda era meio recente. Kazuhiko “Smokey” Nagata foi um dos membros que transformaram o hobby em um modo de ganhar a vida. Usando as técnicas de preparação que aprendeu e desenvolveu para seu Supra, Nagata abriu a Top Secret Performance Engineering Service. Agora, se disséssemos que ele parou de acelerar nas ruas e estradas… seríamos hipócritas. Ele provavelmente não parou.
+                Seu Supra ficou mundialmente famoso por conta do incidente no Reino Unido, que só contribuiu para a reputação de Nagata como preparador. Imagine: um carro tão forte e rápido que o cara por trás dele foi proibido de entrar em um país inteiro! Como não querer que ele fuce seu carro? Foi assim que, a partir daí, “Smokey” Nagata tornou-se referência em preparações extremas, especialmente envolvendo o Toyota Supra. Na verdade, dizem que ele até ficou meio entediado por conta disto tudo.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_03.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_03.jpg" alt="Supra V12"></a>
+                <p class="text">
+                A primeira metade dos anos 2000 foi meio broxante para o Mercado Doméstico Japonês. Por causa da situação econômica do arquipélago e também como consequência dos níveis cada vez mais rigorosos para emissão de poluentes e consumo de combustível. Os esportivo lendários dos anos 90, em sua maioria, não sobreviveram à chegada do novo século – Nissan Skyline GT-R, Mazda RX-7, Mitsubishi 3000GT e Toyota Supra deixaram de existir e era quase certo que eles não deixariam
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_05.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_05.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Para agitar um pouco as coisas, “Smokey” Nagata decidiu que ele mesmo iria acabar com o marasmo do mundo automotivo. Como? Com um novo Supra.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_06.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_06.jpg" alt="Supra V12"></a>
+                <p class="text">
+                O Supra que ficou famoso em 1998 era movido por um, pasme, quatro-cilindros. Era um 3S-GTE – o motor do Toyota Celica, que foi produzido entre 1986 e 2007 e, em suas últimas versões, entregava saudáveis 260 cv. Isto original de fábrica, pois com o toque da Top Secret, a potência arranhava os 580 cv. Como superá-lo? Para Nagata, a solução foi bem simples: fazer um novo Supra. Só que, em vez de um quatro-cilindros, ele teria um V12.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_15.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_15.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Para deixar tudo em casa, o motor escolhido foi o 1GZ-FE, de cinco litros, o único V12 fabricado pela Toyota. É o motor do sedã Century, o carro mais luxuoso da fabricante japonesa e o veículo oficial da família real do Japão.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_16.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_16.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Dotado de comando variável VVT-i nos cabeçotes e taxa de compressão de 10,5:1, o 1GZ tem potência declarada 280 cv — como de costume, por causa do acordo informal entre as fabricantes japonesas. Contudo, a potência real é de 310 cv, que aparecem às 5.200 rpm, enquanto o torque é de 49 mkgf a 4.000 rpm, sendo que mais de 40 mkgf já estão disponíveis desde as 1.200 rpm. É um motor voltado a longas viagens, com torque em abundância e funcionamento suave e silencioso.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_17.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_17.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Só que Nagata queria criar um monstro. Seu objetivo era chegar aos 1.000 cv – potência que considerava “na medida” para ultrapassar a marca dos 400 km/h. E, por mais que fosse o motor de um sedã familiar, o 1GZ era um V12 bastante robusto e de projeto moderno, com comando duplo nos cabeçotes, variador de fase VVT-i e um sistema com dupla ECU onde cada módulo controlava uma bancada de cilindros, permitindo ao V12 funcionar como um seis-em-linha no caso de qualquer defeito.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_18.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_18.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Assim, para começar, Nagata trocou todos os componentes internos do motor por peças forjadas, feitas sob medida. Detalhe: as peças tiveram de ser desenvolvidas e fabricadas pela Top Secret, pois simplesmente não havia componentes aftermarket para o 1GZ – que, compreensivelmente, nunca foi o favorito dos preparadores. Então, foram instalados dois turbocompressores HKS GT2835, um ao lado de cada bancada, com um intercooler na dianteira.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_19.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_19.jpg" alt="Supra V12"></a>
+                <p class="text">
+                O setup acabou com o espaço no cofre para o radiador, que precisou ser deslocado para o porta-malas, dividindo espaço com o tanque de combustível selado fabricado especialmente para o projeto. Um par de ventoinhas foi colocado à frente do intercooler, e toda a tubulação do sistema de arrefecimento foi remanejada para o assoalho do carro, escondida dos olhos. Comandos de graduação mais agressiva foram instalados e um cilindro de óxido nitroso foi colocado lá atrás  para conseguir uma dose extra de potência ao toque de um botão. Por fim, as ECU originais foram trocadas por duas HKS F-Con Vpri, com programação exclusiva, a fim de permitir que o motor trabalhe mais “no limite” e aproveite melhor seus recursos. O resultado: 943 cv a 7.300 rpm e 103 mkgf de torque à pressão máxima de 1,2 bar – nada de treskilimei aqui, não.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_20.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_20.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Como se um V12 de 1.000 cv (depois do jato de N2O) não fosse chamar atenção o bastante, Nagata também aproveitou o projeto para estrear seu novo body kit, que vinha sendo desenvolvido havia algum tempo, com uma dianteira alongada, faróis triangulares e alongados, e para-lamas esculpidos com linhas marcantes e, de certo modo, influenciadas pela década de 80. O carro ficou 10 cm mais largo no total – 5,5 cm de cada lado. O kit, que se chama Top Secret Wangan G-Force (um belo nome, por sinal).
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_23.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_23.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Por mais chocante e controverso que seja, o visual do Supra seguia a função: segundo Nagata, seu conjunto aerodinâmico trazia perfeito equilíbrio entre aumento de downforce e redução de arrasto – duas coisas necessárias para se chegar aos 400 km/h de forma estável e razoavelmente segura.
+                A pintura dourada foi escolhida simplesmente porque o outro Supra da Top Secret já era dourado. O carro ainda recebeu rodas Rays GTF de 19”, calçadas com pneus de medidas 245/35 na dianteira e 275/40 na traseira. Quase todo o diâmetro é ocupado pelos discos de freio da GReddy, ventilados e slotados, com 380 mm de diâmetro na dianteira e 350 mm na traseira, com pinças de seis pistões e quatro pistões, respectivamente. A suspensão usa amortecedores do tipo coilover, feitos sob medida pela Top Secret.
+                O carro apareceu pela primeira vez em público há dez anos, durante o Tokyo Auto Salon de 2007. Nagata disse, a princípio, que seria apena um show car para eventos desse tipo, porpem não demorou para mudar de ideia: no ano seguinte o carro foi levado até o circuito alemão de Nardó Ring para testar sua velocidade máxima – e, quem sabe, comprovar que o Supra seria mesmo capaz de chegar aos 400 km/h.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_24.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_24.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Em uma sessão de testes que durou duas horas, com o próprio Nagata ao volante, o Supra conseguiu chegar aos 358 km/h usando um câmbio manual de seis marchas da Getrag.
+                </p>
+                <a class="photoBox" href="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_25.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Supra TopSecret\search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_25.jpg" alt="Supra V12"></a>
+                <p class="text">
+                Se formos ver apenas os números, o carro de Smokey Nagata foi um fracasso. No entanto, ele não poderia se importar menos: o visual inigualável e a potência de quatro dígitos garantiram que os holofotes se voltassem para a Top Secret. O Supra apareceu em capas de revista, matérias em sites e eventos por todo o Japão. Aliás, o faz até hoje.
+                </p>
+                <a class="photoBox" href="Imagens/Supra TopSecret/search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_05.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens/Supra TopSecret/search3nd_1994_TOPSECRET_TS8012V_TOYOTA_SUPRA_05.jpg" alt="Supra V12"></a>
+                <p class="text">
+                A notícia da vez é que o carro será leiloado por uma agência japonesa chamada BH Auctions no dia 12 de janeiro de 2018. E o leilão acontecerá durante o Tokyo Auto Salon, exatamente no mesmo lugar onde o carro foi apresentado em 2007. Não foi divulgada qualquer estimativa a respeito do valor de arremate, mas qualquer um que levar este Supra para casa levará consigo um pouco da história do tuning japonês. E isto não tem preço.    
+                </p>
+            </div>
+        </div> 
+    </section>
+    <section class="banner">
+        <div class="textBox">
+            <h2 class="cars"><strong>Porsche 930 "Yoshida Special": Yoshida San (Midnight Club)</strong></h2>
+            <div class="card">
+                <a href="Imagens/Porsche Yoshida/47573354_960681797435607_4031694931855671296_o-999x731.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\47573354_960681797435607_4031694931855671296_o-999x731.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                Wangan Midnight é possivelmente um dos animes/mangás sobre carros mais famosos que existem, ao lado de Initial D – na verdade, o mangá com a história de Akio Asakura e seu Nissan S30 “Devil Z” foi lançado cinco anos antes do primeiro volume de Initial D, em 1990.
+                Assim como Initial D, que nasceu depois que seu criador, Shuichi Shigeno, conheceu um entregador de tofu que usava um Impreza WRX para fazer suas entregas, Wangan Midnight também é baseado no mundo real Mais precisamente, na cena de corridas ilegais na Shuto Expressway, em Tóquio, e na lendária gangue de pilotos de rua Mid Night Club. E talvez não haja um ponto de convergência entre estes dois elementos melhor do que o Porsche 930 “Yoshida Special” – um carro que fez parte do Mid Night Club e que já teve seus momentos de meliante na Wangan. Um carro que existe de verdade e que continua sendo impressionante, mesmo após mais de três décadas. E o carro que inspirou o Blackbird de Wangan Midnight.
+                Só tem um detalhe: ele não é preto, mas sim bordô. Mas talvez “Burgundybird” não fosse um nome tão sonoro…
+                </p>
+                <h3>A inspiração da inspiração</h3>
+                <a href="Imagens/Porsche Yoshida/JzZ0YzIvQxq2hetOsuKqXw.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\JzZ0YzIvQxq2hetOsuKqXw.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                O carro foi montado por uma enigmática figura: um homem chamado Yoshida Eiichi, e mais conhecido como Yoshida-san – ele era, de fato um dos membros do Mid Night Club. E, como tudo o que envolve o Mid Night Club, o próprio Yoshida tem seus mistérios – sua origem, sua idade, seu meio de ganhar a vida são informações que não circulam por aí. Especula-se que ele tenha se formado em medicina, mas abandonou a carreira de médico para dedicar-se à revenda de carros da família e, nas horas vagas, dar seus “passeios noturnos” e preparar motores.
+                O que se sabe: Yoshida tinha uma obsessão: fazer seu Porsche 911 Turbo 1979 passar dos 347 km/h – a velocidade máxima que o famoso Ruf CTR Yellowbird – sim, o ícone do Gran Turismo e de Faszination Nürburgring – atingiu em 1987. É claro que ele também participava dos pegas na Wangan japonesa e, graças àquele carro, conquistou uma belíssima reputação, mas o que ele mais queria era superar os alemães.
+                O ponto de partida foi um Porsche 911 Turbo 1979 – um carro que, originalmente, era preto, e só ganhou sua cor vinho depois que Yoshida começou a fuçar nele. Então, de certa forma, o nome Blackbird tem uma origem clara. E também pode ser uma referência ao Ruf Yellowbird..
+                </p>
+                <h3>Aperfeiçoando a receita</h3>
+                <a href="Imagens/Porsche Yoshida/BlghejXBRK2G8SYjAheYew.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\BlghejXBRK2G8SYjAheYew.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                Não se sabe ao certo quando Yoshida-san comprou o Porsche 911 mas, de acordo com relatos de fãs japoneses, sabe-se de um Porsche 911 Turbo preto com adesivos do Mid Night Club circulando no Japão já em 1982 – coincidentemente, o mesmo ano em que a gangue foi fundada.
+                Também não são conhecidas as exatas modificações que Yoshida fez no Porsche 911 ao longo do tempo – apenas os números com os quais ele estava trabalhando. No início, ele acreditava que chegando aos 500 cv ele conseguiria superar o Yellowbird, que tinha seus 469 cv no motor flat-six de 3,4 litros. Então, em algum momento, quando levou o carro até o oval de Yatabe – a famosa pista de testes em Tsukuba – para tentar atingir sua marca, Yoshida estourou o motor assim que chegou aos 302 km/h.
+                Imediatamente o Porsche 930 foi levado para a Mid Night Porsche Works, preparadora de Tóquio especializada nos esportivos de Stuttgart, para receber um novo motor – um motor ainda mais potente, que foi continuamente melhorado ao longo do tempo para chegar aos 620 cv.
+                </p>
+                <a href="Imagens/Porsche Yoshida/Y56r_rd8SoCn7nRXQFzgWA.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\Y56r_rd8SoCn7nRXQFzgWA.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                Existe uma ficha técnica publicada pela revista japonesa Option em 2011, como conta Josh S do site Drivetribe. É a única ficha técnica do 930 Yoshida Special com fonte confiável de que se tem notícia, e ela é bem interessante.
+                De acordo com a Option, uma das configurações mais recentres do carro contava com um leve aumento no deslocamento, passando de 3,3 litros para 3,4 litros. O motor também tinha pistões forjados Mahle, bielas de titânio, comandos de válvuals Porsche Racing, molas de válvulas vindas de um Porsche 935 e um intercooler gigantesco, com três vezes a capacidade do original, que era praticamente a única coisa que se via ao abrir a tampa do motor.
+                </p>
+                <a href="Imagens/Porsche Yoshida/JMye5QT4T0GLcanNCrYcqA.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\JMye5QT4T0GLcanNCrYcqA.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                O turbocompressor era um KKK K33S, o mesmo do Porsche 934, operando a 1,26 bar. Os cabeçotes com duas velas por cilindro também vinham do Porsche 934, assim como o bloco.
+                O câmbio era de quatro marchas, exatamente como no Porsche 911 turbo original, porém com embreagem e volante do motor emprestados de um Porsche 956. Segundo a Option, as relações foram modificadas para aproveitar melhor a curva de potência do motor – teoricamente o carro podia chegar aos 120 km/h em primeira marcha, aos 250 km/h na terceira marcha, e a mais de 340 km/h no topo da quarta marcha. Para segurar o ímpeto, o Porsche de Yoshida-san também usava freios do Porsche 935, com discos perfurados, e suspensão com amortecedores ajustáveis da Bilstein.
+                Tudo isto era impressionante em um carro que, esteticamente, não cometia nenhuma loucura. Claro, ele tinha seus toques especiais, como o para-choque dianteiro inspirado pelo Porsche 934, os espelhos ao estilo do 911 RSR, ou os dutos NACA no lugar dos vidros laterais traseiros – além, claro, da pintura vinho metálico.
+                </p>
+                <a href="Imagens/Porsche Yoshida/SgnW-lbyQEu7SpTQ9ZJVBw.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\SgnW-lbyQEu7SpTQ9ZJVBw.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                Mas o interior guardava mais surpresas, como os bancos concha “Lollipop” da década de 1970 (que também eram usados pela Kremer Racing), apelidados assim pelo formato dos encostos de cabeça; ou a gaiola de proteção integral acolchoada. O volante era igual ao do Porsche 964 Carrera RS, e o quadro de instrumentos tinha o conta-giros e o velocímetro de 350 km/h do Porsche 959.
+                É possivelmente esta configuração que o carro conserva até hoje, possivelmente – e conforme mostra um artigo de 2015 publicado no Speedhunters. Mas sua história não acabou aí.
+                </p>
+                <h3>Que fim levou?</h3>
+                <a href="Imagens/Porsche Yoshida/MidNight-930-28-999x666.jpg" data-fancybox="gallery" data-caption="GalleryA"><img src="Imagens\Porsche Yoshida\MidNight-930-28-999x666.jpg" alt="Porsche Yoshida"></a>
+                <p class="text">
+                De acordo com o Speedhunters, até poucos anos atrás o carro ficava exposto em uma concessionária chamada Premier Cars, na ilha artificial de Odaiba, na Baía de Tóquio. A loja pertence a Yoshida-san, que voltou a lidar com vendas de carros após a dissolução do Mid Night Club. E o 911 Yoshida Special estava à venda.
+                Em 2018, porém, Yoshida envolveu-se em um escândalo – ele foi acusado de fraude ao prometer a uma revenda de carros de Tóquio a última unidade do Porsche 918 Spyder, dizendo que tinha “contatos especiais” e que precisava de um depósito adiantado. A revenda fez o depósito, mas Yoshida jamais entregou o carro – que ele não tinha, obviamente. Em 2019, uma nova acusação de uma fraude do mesmo tipo foi feita, porém o objeto era uma Ferrari LaFerrari.
+                Com base nas acusações e após confessar que estava aplicando os golpes para pagar dívidas – mesma razão, presume-se, pela qual o Yoshida Special estava à venda.        
+                Desde então, Yoshida-san sumiu da mídia, bem como o carro. Segundo o Drivetribe, é bem provável que o carro tenha sido apreendido pelas rigorosas autoridades do Japão, e que apareça em um futuro próximo como parte de um leilão.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer></footer>
+<script src="revisaCar.js"></script>
 </body>
 </html>
